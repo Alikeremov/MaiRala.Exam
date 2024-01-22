@@ -77,7 +77,7 @@ namespace MarianaMVCApp.Areas.Manage.Controllers
             if (existed == null) return NotFound();
             if (!ModelState.IsValid)
             {
-                return View(existed);
+                return View(updateVm);
             }
             if (updateVm.Photo != null)
             {

@@ -10867,11 +10867,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ca.r214.03\\Desktop\\MarianaMVCApp\\MarianaMVCApp.csproj",
+      "projectUniqueName": "C:\\Users\\ca.r214.03\\Desktop\\MaiRala.Exam\\MarianaMVCApp\\MarianaMVCApp.csproj",
       "projectName": "MarianaMVCApp",
-      "projectPath": "C:\\Users\\ca.r214.03\\Desktop\\MarianaMVCApp\\MarianaMVCApp.csproj",
+      "projectPath": "C:\\Users\\ca.r214.03\\Desktop\\MaiRala.Exam\\MarianaMVCApp\\MarianaMVCApp.csproj",
       "packagesPath": "C:\\Users\\ca.r214.03\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ca.r214.03\\Desktop\\MarianaMVCApp\\obj\\",
+      "outputPath": "C:\\Users\\ca.r214.03\\Desktop\\MaiRala.Exam\\MarianaMVCApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

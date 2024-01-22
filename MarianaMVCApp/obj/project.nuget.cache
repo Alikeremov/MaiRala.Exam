@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s1hT0wfVtRLo/xVATzkGcvDNKDe5evIZBg7SXt2AM7dTnxw5yDtoo+FJtX6030jGq+mvBGt+Aj5t8fK5IWjm6w==",
+  "dgSpecHash": "+mNV8wHJKoi5y6Iz9ZM9RmYzacaKFIPXS8ri25B3fk8aQ5sGzXQHuQRnWnPcj5orm7H4uwqslRg0PVSQJ4kKzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ca.r214.03\\Desktop\\MarianaMVCApp\\MarianaMVCApp.csproj",
+  "projectFilePath": "C:\\Users\\ca.r214.03\\Desktop\\MaiRala.Exam\\MarianaMVCApp\\MarianaMVCApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ca.r214.03\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\ca.r214.03\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -81,29 +81,17 @@
         </div>
         <!-- Example row of columns -->
         <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="service-content">
-                    <i class="fa fa-users"></i>
-                    <h5>Consultancy</h5>
-                    <p>Caritas aritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam </p>
+            @foreach (var item in Model.Services)
+            {
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="service-content">
+                        <i class="@item.Icon"></i>
+                        <h5>@item.Tittle</h5>
+                        <p>@item.Description </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="service-content">
-                    <i class="fa fa-camera"></i>
-                    <h5>Marketing</h5>
-                    <p>Caritas aritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam </p>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="service-content">
-                    <i class="fa fa-database"></i>
-                    <h5>Research</h5>
-                    <p>Caritas aritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam </p>
-                </div>
-            </div>
+            }
 
         </div>
     </div> <!-- /container -->
@@ -188,111 +176,24 @@
         <!-- Example row of columns -->
         <div class="row">
 
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            @foreach (var item in Model.Projects)
+            {
+                <div class="col-md-3 col-sm-6 col-xs-12">
 
-                <div class="project-item">
-                    <img src="~/assets/images/project/1.png" alt="" />
+                    <div class="project-item">
+                        <img src="~/assets/images/project/@item.Image" alt="" />
 
-                    <div class="project-overlay"></div>
-                    <div class="project-content">
-                        <h5>PaperClips</h5>
-                        <div class="project-separator"></div>
-                        <h6>Branding</h6>
+                        <div class="project-overlay"></div>
+                        <div class="project-content">
+                            <h5>@item.Tittle</h5>
+                            <div class="project-separator"></div>
+                            <h6>@item.Description</h6>
+                        </div>
                     </div>
+
                 </div>
 
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="project-item">
-                    <img src="~/assets/images/project/2.png" alt="" />
-
-                    <div class="project-overlay"></div>
-                    <div class="project-content">
-                        <h5>PaperClips</h5>
-                        <div class="project-separator"></div>
-                        <h6>Branding</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="project-item">
-                    <img src="~/assets/images/project/3.png" alt="" />
-
-                    <div class="project-overlay"></div>
-                    <div class="project-content">
-                        <h5>PaperClips</h5>
-                        <div class="project-separator"></div>
-                        <h6>Branding</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="project-item">
-                    <img src="~/assets/images/project/4.png" alt="" />
-
-                    <div class="project-overlay"></div>
-                    <div class="project-content">
-                        <h5>PaperClips</h5>
-                        <div class="project-separator"></div>
-                        <h6>Branding</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="project-item">
-                    <img src="~/assets/images/project/1.png" alt="" />
-
-                    <div class="project-overlay"></div>
-                    <div class="project-content">
-                        <h5>PaperClips</h5>
-                        <div class="project-separator"></div>
-                        <h6>Branding</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="project-item">
-                    <img src="~/assets/images/project/2.png" alt="" />
-
-                    <div class="project-overlay"></div>
-                    <div class="project-content">
-                        <h5>PaperClips</h5>
-                        <div class="project-separator"></div>
-                        <h6>Branding</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="project-item">
-                    <img src="~/assets/images/project/3.png" alt="" />
-
-                    <div class="project-overlay"></div>
-                    <div class="project-content">
-                        <h5>PaperClips</h5>
-                        <div class="project-separator"></div>
-                        <h6>Branding</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="project-item">
-                    <img src="~/assets/images/project/4.png" alt="" />
-
-                    <div class="project-overlay"></div>
-                    <div class="project-content">
-                        <h5>PaperClips</h5>
-                        <div class="project-separator"></div>
-                        <h6>Branding</h6>
-                    </div>
-                </div>
-            </div>
+            }
 
         </div>
 
@@ -337,71 +238,31 @@
         </div>
         <!-- Example row of columns -->
         <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="main-team">
-                    <div class="team-details">
+            @foreach (var item in Model.Employees)
+            {
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="main-team">
+                        <div class="team-details">
 
-                        <img src="~/assets/images/team-img.jpg" alt="" />
-                        <div class="team-overlay"></div>
+                            <img src="~/assets/images/timeline/@item.Image" alt="" />
+                            <div class="team-overlay"></div>
 
-                        <div class="social">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div class="members-info">
-                        <h4>Mitchell Anderson</h4>
-                        <h6>Creative Director</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="main-team">
-                    <div class="team-details">
-
-                        <img src="~/assets/images/team-img.jpg" alt="" />
-                        <div class="team-overlay"></div>
-
-                        <div class="social">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <div class="members-info">
+                            <h4>@item.FullName</h4>
+                            <h6>@item.Position</h6>
                         </div>
-
-                    </div>
-
-                    <div class="members-info">
-                        <h4>Mitchell Anderson</h4>
-                        <h6>Creative Director</h6>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="main-team">
-                    <div class="team-details">
-
-                        <img src="~/assets/images/team-img.jpg" alt="" />
-                        <div class="team-overlay"></div>
-
-                        <div class="social">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-
-                    </div>
-
-                    <div class="members-info">
-                        <h4>Mitchell Anderson</h4>
-                        <h6>Creative Director</h6>
-                    </div>
-                </div>
-            </div>
+            }
 
 
 
